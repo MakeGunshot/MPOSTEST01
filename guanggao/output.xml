@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.5rc1 on win32)" generated="20180604 17:34:00.592">
+<suite id="s1" name="Guanggao" source="d:\MPOSTEST01\guanggao\guanggao.robot">
+<test id="s1-t1" name="发布广告">
+<kw name="打开MPOS管理系统">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://10.7.111.196:9999/mposmsNew/index.html#/login</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180604 17:34:00.820" level="INFO">Opening browser 'chrome' to base url 'http://10.7.111.196:9999/mposmsNew/index.html#/login'.</msg>
+<status status="PASS" starttime="20180604 17:34:00.820" endtime="20180604 17:34:12.073"></status>
+</kw>
+<status status="PASS" starttime="20180604 17:34:00.819" endtime="20180604 17:34:12.073"></status>
+</kw>
+<kw name="登录">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div/div/div/div/form/div[1]/div/div/input</arg>
+<arg>${UserName}</arg>
+</arguments>
+<msg timestamp="20180604 17:34:12.075" level="INFO">Typing text 'shanxiaoguang' into text field 'xpath:/html/body/div/div/div/div/form/div[1]/div/div/input'.</msg>
+<status status="PASS" starttime="20180604 17:34:12.074" endtime="20180604 17:34:12.321"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div/div/div/div/form/div[2]/div/div/input</arg>
+<arg>${PassWord}</arg>
+</arguments>
+<msg timestamp="20180604 17:34:12.322" level="INFO">Typing text '12345678' into text field 'xpath:/html/body/div/div/div/div/form/div[2]/div/div/input'.</msg>
+<status status="PASS" starttime="20180604 17:34:12.322" endtime="20180604 17:34:12.460"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div/div/div/div/form/div[4]/div/button</arg>
+</arguments>
+<msg timestamp="20180604 17:34:12.460" level="INFO">Clicking element 'xpath:/html/body/div/div/div/div/form/div[4]/div/button'.</msg>
+<status status="PASS" starttime="20180604 17:34:12.460" endtime="20180604 17:34:12.539"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20180604 17:34:17.540" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20180604 17:34:12.539" endtime="20180604 17:34:17.540"></status>
+</kw>
+<status status="PASS" starttime="20180604 17:34:12.074" endtime="20180604 17:34:17.540"></status>
+</kw>
+<kw name="点击业务管理">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[1]/div/div[2]/div[1]/div/div[1]/div[1]/span[2]</arg>
+</arguments>
+<msg timestamp="20180604 17:34:17.541" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/div[2]/div[1]/div/div[1]/div[1]/span[2]'.</msg>
+<status status="PASS" starttime="20180604 17:34:17.541" endtime="20180604 17:34:17.717"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20180604 17:34:20.718" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20180604 17:34:17.717" endtime="20180604 17:34:20.718"></status>
+</kw>
+<status status="PASS" starttime="20180604 17:34:17.541" endtime="20180604 17:34:20.719"></status>
+</kw>
+<kw name="点击广告管理">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath: /html/body/div[1]/div/div[2]/div[1]/div/div[1]/div[2]/div[6]/div[1]/span[2]</arg>
+</arguments>
+<msg timestamp="20180604 17:34:20.722" level="INFO">Clicking element 'xpath: /html/body/div[1]/div/div[2]/div[1]/div/div[1]/div[2]/div[6]/div[1]/span[2]'.</msg>
+<status status="PASS" starttime="20180604 17:34:20.721" endtime="20180604 17:34:21.087"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20180604 17:34:24.087" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20180604 17:34:21.087" endtime="20180604 17:34:24.087"></status>
+</kw>
+<status status="PASS" starttime="20180604 17:34:20.720" endtime="20180604 17:34:24.088"></status>
+</kw>
+<kw name="点击发布">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[1]/div/div[2]/div[2]/div[2]/div[2]/div/div[2]/div/button[3]/span</arg>
+</arguments>
+<msg timestamp="20180604 17:34:24.093" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/div[2]/div[2]/div[2]/div[2]/div/div[2]/div/button[3]/span'.</msg>
+<status status="PASS" starttime="20180604 17:34:24.093" endtime="20180604 17:34:24.431"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20180604 17:34:27.431" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20180604 17:34:24.431" endtime="20180604 17:34:27.431"></status>
+</kw>
+<status status="PASS" starttime="20180604 17:34:24.092" endtime="20180604 17:34:27.432"></status>
+</kw>
+<kw name="点击渠道选择">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[1]/div/div[2]/div[2]/div[2]/div[2]/div/div[5]/div/div[2]/form/div[1]/div/div/div/div/div[1]/input</arg>
+</arguments>
+<msg timestamp="20180604 17:34:27.434" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/div[2]/div[2]/div[2]/div[2]/div/div[5]/div/div[2]/form/div[1]/div/div/div/div/div[1]/input'.</msg>
+<status status="PASS" starttime="20180604 17:34:27.434" endtime="20180604 17:34:27.580"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20180604 17:34:30.581" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20180604 17:34:27.581" endtime="20180604 17:34:30.581"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>css:body &gt; div.el-select-dropdown &gt; div &gt; div.el-select-dropdown__wrap.el-scrollbar__wrap &gt; ul &gt; li:nth-child(2) &gt; span</arg>
+</arguments>
+<msg timestamp="20180604 17:34:30.582" level="INFO">Clicking element 'css:body &gt; div.el-select-dropdown &gt; div &gt; div.el-select-dropdown__wrap.el-scrollbar__wrap &gt; ul &gt; li:nth-child(2) &gt; span'.</msg>
+<status status="PASS" starttime="20180604 17:34:30.582" endtime="20180604 17:34:30.784"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20180604 17:34:33.785" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20180604 17:34:30.784" endtime="20180604 17:34:33.785"></status>
+</kw>
+<status status="PASS" starttime="20180604 17:34:27.433" endtime="20180604 17:34:33.786"></status>
+</kw>
+<kw name="点击版本选择">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[1]/div/div[2]/div[2]/div[2]/div[2]/div/div[5]/div/div[2]/form/div[2]/div/div/div/div/div[1]/input</arg>
+</arguments>
+<msg timestamp="20180604 17:34:33.792" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/div[2]/div[2]/div[2]/div[2]/div/div[5]/div/div[2]/form/div[2]/div/div/div/div/div[1]/input'.</msg>
+<status status="PASS" starttime="20180604 17:34:33.792" endtime="20180604 17:34:33.932"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20180604 17:34:36.934" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20180604 17:34:33.932" endtime="20180604 17:34:36.934"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>css:body &gt; div:nth-child(8) &gt; div &gt; div.el-select-dropdown__wrap.el-scrollbar__wrap &gt; ul &gt; li:nth-child(2) &gt; span</arg>
+</arguments>
+<msg timestamp="20180604 17:34:36.934" level="INFO">Clicking element 'css:body &gt; div:nth-child(8) &gt; div &gt; div.el-select-dropdown__wrap.el-scrollbar__wrap &gt; ul &gt; li:nth-child(2) &gt; span'.</msg>
+<status status="PASS" starttime="20180604 17:34:36.934" endtime="20180604 17:34:37.146"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20180604 17:34:40.147" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20180604 17:34:37.146" endtime="20180604 17:34:40.147"></status>
+</kw>
+<status status="PASS" starttime="20180604 17:34:33.791" endtime="20180604 17:34:40.148"></status>
+</kw>
+<kw name="点击平台选择">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[1]/div/div[2]/div[2]/div[2]/div[2]/div/div[5]/div/div[2]/form/div[3]/div/div/div/div/div[1]/input</arg>
+</arguments>
+<msg timestamp="20180604 17:34:40.150" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/div[2]/div[2]/div[2]/div[2]/div/div[5]/div/div[2]/form/div[3]/div/div/div/div/div[1]/input'.</msg>
+<status status="PASS" starttime="20180604 17:34:40.150" endtime="20180604 17:34:40.343"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20180604 17:34:43.344" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20180604 17:34:40.343" endtime="20180604 17:34:43.344"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>css:body &gt; div:nth-child(9) &gt; div &gt; div.el-select-dropdown__wrap.el-scrollbar__wrap &gt; ul &gt; li:nth-child(1) &gt; span</arg>
+</arguments>
+<msg timestamp="20180604 17:34:43.345" level="INFO">Clicking element 'css:body &gt; div:nth-child(9) &gt; div &gt; div.el-select-dropdown__wrap.el-scrollbar__wrap &gt; ul &gt; li:nth-child(1) &gt; span'.</msg>
+<status status="PASS" starttime="20180604 17:34:43.344" endtime="20180604 17:34:43.538"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20180604 17:34:46.539" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20180604 17:34:43.538" endtime="20180604 17:34:46.539"></status>
+</kw>
+<status status="PASS" starttime="20180604 17:34:40.149" endtime="20180604 17:34:46.540"></status>
+</kw>
+<kw name="点击版面选择">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[1]/div/div[2]/div[2]/div[2]/div[2]/div/div[5]/div/div[2]/form/div[4]/div/div/div/div/div[1]/i</arg>
+</arguments>
+<msg timestamp="20180604 17:34:46.542" level="INFO">Clicking element 'xpath:/html/body/div[1]/div/div[2]/div[2]/div[2]/div[2]/div/div[5]/div/div[2]/form/div[4]/div/div/div/div/div[1]/i'.</msg>
+<status status="PASS" starttime="20180604 17:34:46.541" endtime="20180604 17:34:46.658"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20180604 17:34:49.659" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20180604 17:34:46.658" endtime="20180604 17:34:49.659"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>css:body &gt; div:nth-child(10) &gt; div &gt; div.el-select-dropdown__wrap.el-scrollbar__wrap &gt; ul &gt; li:nth-child(4) &gt; span</arg>
+</arguments>
+<msg timestamp="20180604 17:34:49.659" level="INFO">Clicking element 'css:body &gt; div:nth-child(10) &gt; div &gt; div.el-select-dropdown__wrap.el-scrollbar__wrap &gt; ul &gt; li:nth-child(4) &gt; span'.</msg>
+<status status="PASS" starttime="20180604 17:34:49.659" endtime="20180604 17:34:49.833"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20180604 17:34:52.834" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20180604 17:34:49.833" endtime="20180604 17:34:52.834"></status>
+</kw>
+<status status="PASS" starttime="20180604 17:34:46.540" endtime="20180604 17:34:52.834"></status>
+</kw>
+<kw name="点击广告帧">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>css:body &gt; div.container &gt; div &gt; div.panel &gt; div.panel-main &gt; div.el-row &gt; div:nth-child(2) &gt; div &gt; div:nth-child(5) &gt; div &gt; div.el-dialog__body &gt; form &gt; div:nth-child(5) &gt; div &gt; div &gt; div &gt; div &gt; div.el-input &gt; input</arg>
+</arguments>
+<msg timestamp="20180604 17:34:52.842" level="INFO">Clicking element 'css:body &gt; div.container &gt; div &gt; div.panel &gt; div.panel-main &gt; div.el-row &gt; div:nth-child(2) &gt; div &gt; div:nth-child(5) &gt; div &gt; div.el-dialog__body &gt; form &gt; div:nth-child(5) &gt; div &gt; div &gt; div &gt; div &gt; div.el-input &gt; input'.</msg>
+<status status="PASS" starttime="20180604 17:34:52.842" endtime="20180604 17:34:53.015"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20180604 17:34:56.016" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20180604 17:34:53.015" endtime="20180604 17:34:56.016"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>css:body &gt; div:nth-child(11) &gt; div &gt; div.el-select-dropdown__wrap.el-scrollbar__wrap &gt; ul &gt; li:nth-child(4) &gt; span</arg>
+</arguments>
+<msg timestamp="20180604 17:34:56.017" level="INFO">Clicking element 'css:body &gt; div:nth-child(11) &gt; div &gt; div.el-select-dropdown__wrap.el-scrollbar__wrap &gt; ul &gt; li:nth-child(4) &gt; span'.</msg>
+<status status="PASS" starttime="20180604 17:34:56.016" endtime="20180604 17:34:56.178"></status>
+</kw>
+<status status="PASS" starttime="20180604 17:34:52.841" endtime="20180604 17:34:56.178"></status>
+</kw>
+<kw name="输入广告名称">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[1]/div/div[2]/div[2]/div[2]/div[2]/div/div[5]/div/div[2]/form/div[6]/div/div/div/div/input</arg>
+<arg>自动化</arg>
+</arguments>
+<msg timestamp="20180604 17:34:56.179" level="INFO">Typing text '自动化' into text field 'xpath:/html/body/div[1]/div/div[2]/div[2]/div[2]/div[2]/div/div[5]/div/div[2]/form/div[6]/div/div/div/div/input'.</msg>
+<status status="PASS" starttime="20180604 17:34:56.179" endtime="20180604 17:34:56.412"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20180604 17:34:59.412" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20180604 17:34:56.412" endtime="20180604 17:34:59.412"></status>
+</kw>
+<status status="PASS" starttime="20180604 17:34:56.179" endtime="20180604 17:34:59.412"></status>
+</kw>
+<kw name="点击跳转业务">
+<msg timestamp="20180604 17:34:59.414" level="FAIL">User keyword '点击跳转业务' contains no keywords.</msg>
+<status status="FAIL" starttime="20180604 17:34:59.413" endtime="20180604 17:34:59.414"></status>
+</kw>
+<status status="FAIL" starttime="20180604 17:34:00.818" endtime="20180604 17:34:59.421" critical="yes">User keyword '点击跳转业务' contains no keywords.</status>
+</test>
+<status status="FAIL" starttime="20180604 17:34:00.594" endtime="20180604 17:34:59.426"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Guanggao">Guanggao</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
